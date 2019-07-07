@@ -17,6 +17,8 @@ it('should have add a message when add is called', () => {
   });
 
   it('should have clear a message when clear is called', () => {
+    service.add('Test Mesaage');
+
     service.clear();
     expect(service.messages.length).toBe(0);
     });
